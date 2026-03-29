@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { MODELS, ModelId } from '@/app/lib/constants';
+import { ModelId } from '@/app/lib/constants';
 import { Message } from '@/app/lib/types';
 import ChatControls from "@/app/components/chat/ChatControls";
 import ModelSelector from "@/app/components/chat/ModelSelector";
@@ -124,7 +124,6 @@ export default function Home() {
                             />
                         </div>
                     </div>
-
                     <ChatControls
                         streamMode={streamMode}
                         useRag={useRag}
